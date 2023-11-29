@@ -4,7 +4,7 @@ import time
 
 def worker(arg):
     while not arg['stop']:
-        logging.debug('Hi from myfunc')
+        logging.debug('Hi from myfunc 4')
         time.sleep(0.5)
 
 def main():

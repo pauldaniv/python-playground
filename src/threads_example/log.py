@@ -4,7 +4,7 @@ import time
 
 def worker(arg):
     while not arg['stop']:
-        logging.debug('Hi from myfunc 4')
+        logging.debug('Hi from myfunc 6')
         time.sleep(0.5)
 
 def main():
@@ -14,7 +14,7 @@ def main():
     thread.start()
     while True:
         try:
-            logging.debug('Hello from main')
+            logging.debug('Hello from main 2')
             time.sleep(0.75)
         except KeyboardInterrupt:
             info['stop'] = True

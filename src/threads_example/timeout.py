@@ -24,15 +24,16 @@ def timeout(seconds, error_message="Function call timed out"):
 
 # Example usage:
 
-@timeout(5)  # Set a timeout of 5 seconds
-def long_running_function():
-    import time
-    time.sleep(4)  # Simulate a function taking longer than the timeout
+class MyClass:
+    @timeout(5)  # Set a timeout of 5 seconds
+    def long_running_function(self):
+        import time
+        time.sleep(6)  # Simulate a function taking longer than the timeout
 
 
 if __name__ == '__main__':
 
     try:
-        long_running_function()
+        MyClass().long_running_function()
     except TimeoutError as e:
         print(f"Caught TimeoutError: {e}")

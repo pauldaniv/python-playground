@@ -38,4 +38,4 @@ if __name__ == '__main__':
     try:
         MyClass().long_running_function()
     except TimeoutError as e:
-        print(f"Caught TimeoutError: {e}")
+        print(f"Caught one TimeoutError: {e}")

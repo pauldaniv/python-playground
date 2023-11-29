@@ -24,6 +24,8 @@ def timeout(seconds, error_message="Function call timed out"):
 
 # Example usage:
 
+
+
 class MyClass:
     @timeout(5)  # Set a timeout of 5 seconds
     def long_running_function(self):
